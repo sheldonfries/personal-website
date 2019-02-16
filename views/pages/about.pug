@@ -1,0 +1,72 @@
+extends ../layouts/layout
+block css
+  link(rel='stylesheet', href='/styles/about.css')
+block content
+  .container-fluid
+    #middle
+      #content
+        #aboutme
+          h1.about-header About Me
+          .row
+            .col(style='text-align: right')
+              p Something interesting about me idk.
+              a(href='#', target='_blank')
+                span.badge.badge-primary View Resume
+            .col.sheldon-holder
+              img(src='images/sheldon.jpg', alt='Sheldon Fries')
+        .margin-top-large
+        #technologies
+          h1.about-header Technologies
+          .row.technologies
+            .col-sm-6
+              ul
+                li JavaScript & jQuery
+                li Java
+                li C
+                li Python
+                li CSS/Sass/Less
+            .col-sm-6
+              ul
+                li Node.js
+                li React.js
+                li Git (Version Control)
+                li Responsive & Material Design
+                li Photoshop
+        .margin-top-large
+        #highlights
+          h1.about-header Highlights
+          .row.highlights
+            .col-md-5.img-holder.cwh
+              img(src='', alt='Canadian Web Hosting')
+            .col-md-7
+              h4 Canadian Web Hosting
+              h6
+                span.degree Junior Programmer
+                br
+                | Summer 2018
+              p
+                | Lorem ipsum blah blah blah Lorem ipsum blah blah blah Lorem ipsum blah blah blah Lorem ipsum blah blah blah
+          .divider
+          .row.highlights
+            .col-md-5.img-holder
+              img(src='https://c1.staticflickr.com/6/5621/21105291931_762386557d_b.jpg', alt='Simon Fraser University')
+            .col-md-7
+              h4 Simon Fraser University
+              h6
+                span.degree BSc, Computing Science
+                br
+                | January 2018 - Present
+              p
+                | Lorem ipsum blah blah blah Lorem ipsum blah blah blah Lorem ipsum blah blah blah Lorem ipsum blah blah blah
+          .divider
+          .row.highlights
+            .col-md-5.img-holder
+              img(src='https://upload.wikimedia.org/wikipedia/commons/7/7e/Langara_Library.jpg', alt='Langara College')
+            .col-md-7
+              h4 Langara College
+              h6
+                span.degree Computer Science
+                br
+                | January 2015 - December 2017
+              p
+                | Lorem ipsum blah blah blah Lorem ipsum blah blah blah Lorem ipsum blah blah blah Lorem ipsum blah blah blah

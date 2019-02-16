@@ -10,6 +10,9 @@ html
     script(src='/dependencies/bootstrap/bootstrap.js')
     title Sheldon Fries
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+    block css
+    
   body
     // Header
     nav.navbar.navbar-light.navbar-expand-lg.bg-light.fixed-top
@@ -33,7 +36,7 @@ html
               span.dropdown-header Miscellaneous
               a.dropdown-item(href='https://github.com/sheldonfries/crypto-reader') Crypto Reader
               a.dropdown-item(href='https://github.com/sheldonfries/TOSDataPuller') TOSDataPuller
-          a.nav-item.nav-link(href='about.html') About
+          a.nav-item.nav-link(href='about') About
           a.nav-item.nav-link(href='http://blog.sheldonfries.com') Blog
         ul.ml-auto.navbar-nav.screen.social-nav
           li.nav-item.social

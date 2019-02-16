@@ -61,15 +61,10 @@ module.exports = function(grunt) {
         appRoot: '.tmp/public'
       },
       files: {
-        '.tmp/public/**/*.html': require('../pipeline').jsFilesToInject,
-        'views/**/*.html': require('../pipeline').jsFilesToInject,
-        'views/**/*.pug': require('../pipeline').jsFilesToInject
+        '.tmp/public/**/*.html': ['.tmp/public/min/production.min.js'],
+        'views/**/*.html': ['.tmp/public/min/production.min.js'],
+        'views/**/*.pug': ['.tmp/public/min/production.min.js']
       }
-      // files: {
-      //   '.tmp/public/**/*.html': ['.tmp/public/min/production.min.js'],
-      //   'views/**/*.html': ['.tmp/public/min/production.min.js'],
-      //   'views/**/*.pug': ['.tmp/public/min/production.min.js']
-      // }
     },
 
     prodJsBuild: {
@@ -83,15 +78,10 @@ module.exports = function(grunt) {
         //    (but be note that this can break custom font URLs)
       },
       files: {
-        '.tmp/public/**/*.html': require('../pipeline').jsFilesToInject,
-        'views/**/*.html': require('../pipeline').jsFilesToInject,
-        'views/**/*.pug': require('../pipeline').jsFilesToInject
+        '.tmp/public/**/*.html': ['.tmp/public/dist/*.js'],
+        'views/**/*.html': ['.tmp/public/dist/*.js'],
+        'views/**/*.pug': ['.tmp/public/dist/*.js']
       }
-      // files: {
-      //   '.tmp/public/**/*.html': ['.tmp/public/dist/*.js'],
-      //   'views/**/*.html': ['.tmp/public/dist/*.js'],
-      //   'views/**/*.pug': ['.tmp/public/dist/*.js']
-      // }
     },
 
 
@@ -142,15 +132,10 @@ module.exports = function(grunt) {
         appRoot: '.tmp/public'
       },
       files: {
-        '.tmp/public/**/*.html': require('../pipeline').cssFilesToInject,
-        'views/**/*.html': require('../pipeline').cssFilesToInject,
-        'views/**/*.pug': require('../pipeline').cssFilesToInject
+        '.tmp/public/index.html': ['.tmp/public/min/production.min.css'],
+        'views/**/*.html': ['.tmp/public/min/production.min.css'],
+        'views/**/*.pug': ['.tmp/public/min/production.min.css']
       }
-      // files: {
-      //   '.tmp/public/index.html': ['.tmp/public/min/production.min.css'],
-      //   'views/**/*.html': ['.tmp/public/min/production.min.css'],
-      //   'views/**/*.pug': ['.tmp/public/min/production.min.css']
-      // }
     },
 
     prodStylesBuild: {
@@ -164,15 +149,10 @@ module.exports = function(grunt) {
         //    (but be note that this can break custom font URLs)
       },
       files: {
-        '.tmp/public/**/*.html': require('../pipeline').cssFilesToInject,
-        'views/**/*.html': require('../pipeline').cssFilesToInject,
-        'views/**/*.pug': require('../pipeline').cssFilesToInject
+        '.tmp/public/index.html': ['.tmp/public/dist/*.css'],
+        'views/**/*.html': ['.tmp/public/dist/*.css'],
+        'views/**/*.pug': ['.tmp/public/dist/*.css']
       }
-      // files: {
-      //   '.tmp/public/index.html': ['.tmp/public/dist/*.css'],
-      //   'views/**/*.html': ['.tmp/public/dist/*.css'],
-      //  'views/**/*.pug': ['.tmp/public/dist/*.css']
-      // }
     },
 
 

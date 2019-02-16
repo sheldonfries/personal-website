@@ -23,6 +23,9 @@ module.exports.routes = {
   '/about': { view: 'pages/about' },
   '/hockey': 'http://hockey.sheldonfries.com',
   '/blog': 'http://blog.sheldonfries.com',
+  '/goofspiel': 'https://play.google.com/store/apps/details?id=cc.cu.hockeycalculator.goofspiel&hl=en',
+  '/timer': 'https://play.google.com/store/apps/details?id=cc.cu.hockeycalculator.hiittimer&hl=en',
+  '/jumpy-cat': 'https://play.google.com/store/apps/details?id=com.companyname.Jumpy_Cat',
 
 
   /***************************************************************************

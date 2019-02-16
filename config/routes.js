@@ -21,6 +21,8 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
   '/about': { view: 'pages/about' },
+  '/hockey': 'http://hockey.sheldonfries.com',
+  '/blog': 'http://blog.sheldonfries.com',
 
 
   /***************************************************************************
